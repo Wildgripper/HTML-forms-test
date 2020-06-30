@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Forms test page</title>
+</head>
+
+<body>
+  <section>
+    <h1>Welcome to Pizza Station!</h1>
+    <hr>
+  </section>
+  <section id="form">
+    <form action="submission.html" method="POST">
+      <h1>Създай собствена пица!</h1>
+      <section id="Тесто">
+        <label for="testo">Какво Тесто да използваме?</label>
+        <br>
+        <input type="text" id="testo" name="testo" placeholder="Филаделфия">
+        
+      </section>
+      <hr>
+      <section id="number">
+        <label for="number">За колко човека ще е пицата?</label>
+        <br>
+        <input type="number" id="number" name="number">
+      </section>
+      <hr>
+      <section class="cooked">
+        <label for="cooked">Колко да е препечена?</label>
+        <br><span>Малко</span>
+        <input type="range" name="cooked" id="cooked" value="3" min="1" max="5">
+        <span>Много!</span><br><br>
+      </section>
+      <section class="products">
+        <span>Какви продукти ще използваме?</span><br>
+        <input type="checkbox" name="products" id="shunka" value="shunka">
+        <label for="shunka">Шунка</label>
+        <input type="checkbox" name="products" id="kashkaval" value="kashkaval">
+        <label for="shunka">Кашкавал</label>
+        <input type="checkbox" name="products" id="mushrooms" value="mushrooms">
+        <label for="shunka">Гъби</label>
+      </section>
+      <section class="pepper">
+        <label for="pepper"><h3>Много пипер?</h3></label>
+        <Input type="radio" id="yes" name="pepper" value="yes">
+          <label for="yes">да</label>
+          <Input type="radio" id="no" name="pepper" value="no">
+            <label for="no">Не!</label>
+            <br><br>
+      </section>
+      <section class="sauce">
+        <label for="sauce">Какъв сос да добавим?</label>
+        <select name="sauce" id="sauce">
+          <option value="liutenica">Лютеница</option>
+          <option value="maioneza" selected>Майонеза</option>
+          <option value="mustard">Горчица</option>
+        </select><br><br>
+      </section>
+      <section class="spice">
+        <label for="spice">Каква подправка ще има?</label><br>
+        <input list=spices id="spice" name="spice">
+          <datalist id="spices">
+            <option value="Джоджен"></option>
+            <option value="Дивисил"></option>
+            <option value="Рукола"></option>
+          </datalist>
+      </section>
+      <section class="ideas">
+        <label for="idea"><h3>Още някаква идея?</h3></label>
+        <textarea name="idea" id="idea" cols="30" rows="5"></textarea>
+      </section>
+      <section class="submit">
+        <input type="submit" value="Поръчай!">
+      </section>
+
+
+    </form>
+  </section>
+
+</body>
+
+</html>
